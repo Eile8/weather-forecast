@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <!--floating card/modal on the side-->
+    <form class="searchbox">
+        <div class="searchForm">
+            <label for="search">Search for a City:</label>
+            <input class="form-control" type="text" placeholder="City">
+        </div>
+        <button type="search" class="searchBtn">Search</button>
+    </form>
+       <!--top part: current day, with location-->
+       <div class="container">
+        <h2 class="today"></h2>
+        <p class=icon></p>
+        <p class="temperature">Temp:</p>
+        <p class="wind">Wind:</p>
+        <p class="humidity">Humidity:</p>   
+      </div>  
+
+    <!--locations under search bar-->
+    <div class="location">
+        <a href="https://openweathermap.org/city/4180439" class="list-group-item list-group-item-action">Atlanta</a>
+        <a href="https://openweathermap.org/city/5419384" class="list-group-item list-group-item-action">Denver</a>
+        <a href="#" class="list-group-item list-group-item-action">Seattle</a>
+        <a href="#" class="list-group-item list-group-item-action">San Francisco</a>
+        <a href="#" class="list-group-item list-group-item-action">Orlando</a>
+        <a href="#" class="list-group-item list-group-item-action">New York</a>
+        <a href="#" class="list-group-item list-group-item-action">Chicago</a>
+        <a href="#" class="list-group-item list-group-item-action">Austin</a>
+      </div>
+    
+      <!--5 day forecast-->
+      <div class="forecast">
+        <h3>5-Day Forecast:</h3>
+          <div class="forecastBox" id="row">
+            <p>9/14/2022</p>
+            <p class="icon"></p>
+            <p class="temperature">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p> 
+          <div>
+
+          <div class="forecastBox">
+            <p>9/15/2022</p>
+            <p class="icon"></p>
+            <p class="temperature">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p> 
+          <div>
+
+          <div class="forecastBox">
+            <p>9/16/2022</p>
+            <p class="icon"></p>
+            <p class="temperature">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p> 
+          <div>
+           <div class="forecastBox">
+              <p>9/17/2022</p>
+              <p class="icon"></p>
+              <p class="temperature">Temp:</p>
+              <p class="wind">Wind:</p>
+              <p class="humidity">Humidity:</p> 
+            <div>
+              <div class="forecastBox">
+                <p>9/18/2022</p>
+                <p class="icon"></p>
+                <p class="temperature">Temp:</p>
+                <p class="wind">Wind:</p>
+                <p class="humidity">Humidity:</p> 
+              <div>
+          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+  </body>
+
